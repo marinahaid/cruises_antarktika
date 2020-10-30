@@ -1,0 +1,167 @@
+.form {
+  width: 100%;
+  background-color: #fbf8f8;
+  margin-top: 49px;
+  padding-bottom: 48px;
+}
+
+.form__wrap {
+ margin: 0 auto;
+}
+
+.form__title {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 34px;
+  padding-top: 51px;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.form__text {
+  width: 90%;
+  margin: 0 auto;
+  letter-spacing: 0.4px;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  padding-bottom: 20px;
+  font-weight: 400;
+}
+
+.form__appointment {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  margin: 0 20px;
+}
+
+.form__item {
+width: 100%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.form__input {
+  width: 100%;
+  margin: 0 auto;
+  height: 45px;
+  color: #48494d;
+  font-size: 14px;
+  line-height: 17px;
+  border: 1px solid #d7d9df;
+  text-indent: 15px;
+  letter-spacing: 1.4;
+  position: relative;
+  margin-bottom: 20px;
+
+  &:hover {
+    outline: none;
+  }
+
+  &:active,
+  &:focus {
+    border: 2px solid $color-basic;
+    outline: none;
+    margin: 0;
+  }
+}
+
+.form__input._error {
+  box-shadow: 0 0 10px red;
+}
+
+.form__input:before {
+  content: "*";
+  color: $color-basic;
+  position: absolute;
+}
+
+.form__button {
+  width: 288px;
+  margin: 0 auto;
+  padding: 19px 0;
+  letter-spacing: 2px;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #fff;
+
+  &:active {
+    color: $color-active;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    margin-top: 200px;
+    background-color: #ffffff;
+    position: relative;
+  }
+
+  .from:before {
+    position: absolute;
+    width: 50%;
+    min-height: 455px;
+    background-image: url("../img/pink-tablet.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    display: block;
+    z-index: -1;
+  }
+
+  .form__wrap {
+    width: 658px;
+    min-height: 311px;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(41, 54, 66, 0.1);
+  }
+
+  .form__title {
+    width: 100%;
+    font-size: 25px;
+    line-height: 19px;
+    padding-top: 34px;
+  }
+
+  .form__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .form__list {
+    width: 84%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .form__item {
+    width: 48%;
+  }
+
+  .form__button {
+    width: 250px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .form__wrap {
+    max-width: 1173px;
+    margin: 0 auto;
+  }
+
+  .form__one {
+    width: 658px;
+  }
+}

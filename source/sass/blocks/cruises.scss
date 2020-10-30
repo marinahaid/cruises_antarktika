@@ -1,0 +1,58 @@
+@media (min-width: $desktop-width) {
+.cruises {
+  width: 100%;
+  margin-top: 120px;
+}
+
+.cruises__container {
+  max-width: 1164px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.cruises__left {
+  width: 45%;
+  padding-top: 34px;
+}
+
+.cruises__title {
+color: $color;
+font-size: 28px;
+line-height: 42px;
+text-align: left;
+letter-spacing: 1.7px;
+}
+
+.cruises__text {
+  font-weight: 400;
+color: $color;
+font-size: 16px;
+line-height: 24px;
+text-align: left;
+letter-spacing: 1.3px;
+}
+
+
+.cruises__left:before {
+  content: "";
+  width: 560px;
+height: 301px;
+  background-color: $color;
+  background-image: url("../img/penguin-desk.jpg");
+background-color: #efefef;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+ position: absolute;
+ right: 0;
+ top: 0;
+  display: block;
+
+
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
+    background-image: url("../img/penguin-desk 2.jpg");
+    background-size: cover;
+  }
+}
+}

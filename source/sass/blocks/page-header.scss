@@ -1,0 +1,93 @@
+@media (min-width: $desktop-width) {
+  .page-header {
+    width: 100%;
+    margin: 0 auto;
+height: 643px;
+    background-color: $color;
+    background-image: url("../img/top-desk.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    //position: absolute;
+    //right: unset;
+    left: 0;
+   // top: 39px;
+    display: block;
+    z-index: -1;
+
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url("../img/top-desk2.jpg");
+      background-size: cover;
+    }
+
+  }
+
+ .page-header__wrapper {
+    position: relative;
+    max-width: 100%;
+    max-width: 1164px;
+    margin: 0 auto;
+    padding-top: 0;
+    display: block;
+    padding-left: 0;
+    z-index: 1;
+  }
+
+  .page-header__logo {
+    position: absolute;
+    margin-left: 0;
+    z-index: 100;
+    top: 20px;
+    left: 0;
+  }
+
+  .page-header__logo-image {
+    width: 70px;
+    height: 47px;
+    padding-left: 0;
+    margin-top: 0;
+  }
+}
+
+
+
+/*@media (min-width: $tablet-width) {
+  .page-header {
+    width: 100%;
+  }
+
+  .page-header__logo-image {
+    display: block;
+    height: 19px;
+    width: 42px;
+    padding-left: 21px;
+  }
+}
+
+@media (min-width: $mobile-width) {
+.page-header {
+  width: 100%;
+}
+
+.page-header__wrapper {
+  margin: 0 auto;
+}
+
+.page-header__logo {
+  height: 32px;
+  padding-top: 18px;
+}
+
+.page-header__logo-image {
+  display: block;
+  height: 27px;
+  width: 55px;
+  padding-left: 10px;
+  margin-top: 18px;
+  margin-bottom: 5px;
+}
+}*/
+
+

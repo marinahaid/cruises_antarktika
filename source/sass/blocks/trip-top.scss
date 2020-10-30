@@ -1,0 +1,368 @@
+@media (min-width: $desktop-width) {
+  .trip-top {
+   position: absolute;
+   width: 100%;
+   margin: 0 auto;
+   z-index: 3;
+   top: 218px;
+}
+
+.trip-top__container {
+width: 57%;
+left: 50%;
+transform: translateX(83px);
+}
+
+.trip-top__title {
+  font-size: 54px;
+  line-height: 66px;
+  font-weight: 700;
+  color: #f9fbfd;
+  letter-spacing: 3.4px;
+  margin-bottom: 12px;
+}
+
+.trip-top__text {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #f9fbfd;
+  margin-top: 0;
+  padding-left: 14px;
+  text-align: left;
+  letter-spacing: 1.8px;
+}
+}
+
+.trip-top__container {
+   /* width: 100%;
+    height: 650px;
+    background-color: $color;
+    background-image: url("../img/top-desk.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    position: absolute;
+    //right: unset;
+    left: 0;
+   // top: 39px;
+    display: block;
+    z-index: -1;
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url("../img/top-desk2.jpg");
+      background-size: cover;
+    }*/
+  }
+
+
+  /*.trip-top__title {
+    width: 380px;
+  //  margin: 0 auto;
+    text-align: left;
+    color: #ffffff;
+    font-size: 55px;
+    line-height: 78px;
+    padding-top: 82px;
+    font-weight: 600;
+    letter-spacing: 1.6px;
+position: absolute;
+    left: 56%;
+    top: 166px;
+  }
+
+  .trip-top__block {
+    position: absolute;
+    width: 401px;
+    margin-top: 0;
+    left: 66%;
+    -webkit-transform: translateX(-200px);
+    transform: translateX(-197px);
+    bottom: -171px;
+  }
+
+  .trip-top__text {
+    width: 98%;
+    margin: 0 auto;
+    font-size: 16px;
+    padding-bottom: 35px;
+    line-height: 27px;
+    letter-spacing: .47px;
+    color: #fff;
+    text-align: left;
+  }
+
+  .trip-top__link {
+    width: 345px;
+    margin-left: 0;
+    padding: 27px 0
+  }
+
+  .trip-top__link--text {
+font-size: 12px;
+margin-left: -58px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .trip-top {
+   // position: relative;
+  }
+
+  .trip-top__container {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 344px;
+    background-image: url("../img/tablet-1.jpg");
+  }
+
+  .trip-top__title {
+    width: 398px;
+    margin: 0 auto;
+    text-align: center;
+    color: #ffffff;
+    font-size: 30px;
+    padding-top: 60px;
+    font-weight: 600;
+    letter-spacing: 1.6px;
+
+  }
+
+  .trip-top__block {
+    margin-top: 20px;
+    position: absolute;
+    width: 402px;
+    margin-top: 0px;
+    left: 50%;
+    transform: translateX(-200px);
+    bottom: 40px;
+  }
+
+  .trip-top__text {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 16px;
+    padding-bottom: 11px;
+    line-height: 27px;
+    letter-spacing: 0.47px;
+    color: #ffffff;
+  }
+
+  .trip-top__link {
+    width: 250px;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+.trip-top {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.trip-top__container {
+  width: 100%;
+  margin: 0 auto;
+  min-height: 235px;
+  //background-image: url("../img/top-desk.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  position: relative;
+  background-size: cover;
+  display: block;
+  z-index: -1;
+}
+
+.trip-top__title {
+  width: 250px;
+  margin: 0 auto;
+  text-align: center;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 36px;
+  padding-top: 82px;
+  font-weight: 600;
+  letter-spacing: 1.6px;
+}
+
+.trip-top__text {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 16px;
+  padding-bottom: 20px;
+  line-height: 170%;
+  letter-spacing: 0.4px;
+  color: $color;
+  font-weight: 400;
+}
+
+.trip-top__block {
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.trip-top__link {
+  margin: 0 auto;
+  width: 288px;
+  display: block;
+  //background-color: $color-basic;
+  padding: 15px 0;
+
+  &:active {
+   // background-color: $color-active;
+  }
+}
+
+.trip-top__link--text {
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-left: 44px;
+}
+
+.trip-top__icon {
+  width: 14px;
+  height: 14px;
+  fill: #ffffff;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 44px;
+}
+}
+
+@media (min-width: $tablet-width) {
+  .trip-top {
+   // position: relative;
+  }
+
+  .trip-top__container {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 344px;
+    background-image: url("../img/tablet-1.jpg");
+  }
+
+  .trip-top__title {
+    width: 398px;
+    margin: 0 auto;
+    text-align: center;
+    color: #ffffff;
+    font-size: 30px;
+    padding-top: 60px;
+    font-weight: 600;
+    letter-spacing: 1.6px;
+
+  }
+
+  .trip-top__block {
+    margin-top: 20px;
+    position: absolute;
+    width: 402px;
+    margin-top: 0px;
+    left: 50%;
+    transform: translateX(-200px);
+    bottom: 40px;
+  }
+
+  .trip-top__text {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 16px;
+    padding-bottom: 11px;
+    line-height: 27px;
+    letter-spacing: 0.47px;
+    color: #ffffff;
+  }
+
+  .trip-top__link {
+    width: 250px;
+  }
+}
+
+@media (min-width: $mobile-width) {
+  .trip-top {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .trip-top__container {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 235px;
+    background-image: url("../img/top-desk.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    position: relative;
+    background-size: cover;
+    display: block;
+    z-index: -1;
+  }
+
+  .trip-top__title {
+    width: 250px;
+    margin: 0 auto;
+    text-align: center;
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 36px;
+    padding-top: 82px;
+    font-weight: 600;
+    letter-spacing: 1.6px;
+  }
+
+  .trip-top__text {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 16px;
+    padding-bottom: 20px;
+    line-height: 170%;
+    letter-spacing: 0.4px;
+    color: $color;
+    font-weight: 400;
+  }
+
+  .trip-top__block {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .trip-top__link {
+    margin: 0 auto;
+    width: 288px;
+    display: block;
+    //background-color: $color-basic;
+    padding: 15px 0;
+
+    &:active {
+     // background-color: $color-active;
+    }
+  }
+
+  .trip-top__link--text {
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-left: 44px;
+  }
+
+  .trip-top__icon {
+    width: 14px;
+    height: 14px;
+    fill: #ffffff;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 44px;
+  }
+  }*/
+
+
+
+
+
+
+

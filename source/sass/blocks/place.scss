@@ -1,0 +1,50 @@
+@media (min-width: $desktop-width) {
+.place {
+  width: 100%;
+  margin-top: 111px;
+}
+
+.place__container {
+  max-width: 1164px;
+  margin: 0 auto;
+}
+
+.place__list {
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+ width: 97%;
+ margin: 0 auto;
+}
+
+.place__title {
+  font-size: 28px;
+line-height: 42px;
+font-weight: 600;
+width: 30%;
+margin: 0 auto;
+letter-spacing: 1.6px;
+padding-bottom: 47px;
+}
+
+.place__item {
+  width: 23%;
+  padding-bottom: 30px;
+}
+
+
+.place__item:nth-child(4n) {
+  margin-right: none;
+}
+
+.place__img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+}

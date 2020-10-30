@@ -1,0 +1,23 @@
+
+
+//@media (min-width: $desktop-width) {
+.form-popup-1 {
+  width: 728px;
+  min-height: 444px;
+  background-color: #fbf8f8;
+ display: none;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+   text-align: center;
+   // box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+    border-radius: 5px;
+    z-index: 1000;
+  }
+
+  .modal--active {
+    display: block;
+}
+

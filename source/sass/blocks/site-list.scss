@@ -1,0 +1,162 @@
+@media (min-width: $desktop-width) {
+  .site-list {
+
+    width: 600px;
+   // position: absolute;
+    z-index: 3;
+    margin-left: 528px;
+    padding-top: 20px;
+  }
+
+
+
+
+  .site-list__link {
+    //padding: 18px 20px 18px 20px;
+    display: block;
+  text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #f9fbfd;
+    background-color: inherit;
+letter-spacing: 1px;
+
+    &:focus,
+    &:hover {
+      opacity: 0.6;
+      cursor: pointer;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .site-list__item {
+    border-top: none;
+    border-bottom: none;
+    font-size: 20px;
+    line-height: 25px;
+    color: #ffffff;
+    display: block;
+
+    &--active {
+    //color: $color-basic;
+ }
+ &:hover {
+  //color: $color-basic;
+      }
+    }
+
+
+
+
+.site-list__item {
+ min-height: 40px;
+    border-top: none;
+    border-bottom: none;
+    font-size: 20px;
+    line-height: 25px;
+    color: #ffffff;
+
+
+      &:hover {
+        //color: $color-basic;
+      }
+    }
+
+
+
+
+/*.site-list__link {
+ display: block;
+text-decoration: none;
+    text-align: center;
+   font-size: 14px;
+    line-height: 17px;
+    font-weight: 500;
+  color: #48494d;
+  background-color: inherit;
+  mix-blend-mode: normal;
+top: 42px;
+  letter-spacing: 0.9px;
+ z-index: 1;
+
+
+
+ &:focus,
+  &:hover,
+  &:active {
+ //color: $color-basic;
+    cursor: pointer;
+  }
+}*/
+
+}
+
+
+
+
+
+
+
+/*@media (min-width: $tablet-width) {
+  .site-list__link {
+    padding: 24px 0px 21px 0;
+  }
+
+  .site-list__item:first-child {
+    border-top: none;
+  }
+}
+
+@media (min-width: $mobile-width) {
+
+.site-list__item {
+  position: relative;
+}
+
+.site-list__link:first-child {
+  margin-bottom: 30px;
+}
+
+.site-list__link {
+  padding: 18px 20px 18px 20px;
+  display: block;
+  text-decoration: none;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 500;
+  color: #48494d;
+  background-color: #fbf8f8;
+
+  &:focus,
+  &:hover {
+    opacity: 0.6;
+    cursor: pointer;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.site-list__icon {
+  min-height: 12px;
+  width: 8px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  position: absolute;
+  background-size: cover;
+  display: block;
+  z-index: 1;
+  top: 20px;
+  right: 32px;
+}
+
+/*.site-list__item:last-child {
+  display: none;
+}*/
+
+
+

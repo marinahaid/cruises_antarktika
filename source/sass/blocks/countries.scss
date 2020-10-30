@@ -1,0 +1,336 @@
+.countries {
+  width: 100%;
+  margin-top: 115px;
+}
+
+.countries__container {
+  width: 92%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.countries__title {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 24px;
+  padding-bottom: 26px;
+  font-weight: 600;
+  color: $color;
+  letter-spacing: 2px;
+}
+
+.countries__text {
+  width: 92%;
+  margin: 0 auto;
+  line-height: 27px;
+}
+
+.countries__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.countries__item {
+  width: 90%;
+  padding-bottom: 31px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.countries__link {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+.countries__img {
+  width: 100%;
+  margin: 0 AUTO;
+  height: 425px;
+  position: relative;
+}
+
+.countries__img::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  &:hover,
+  &:focus {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.countries__link-text {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+ color: #ffffff;
+  text-transform: uppercase;
+}
+
+.item-one:before {
+  content: "Греция";
+  position: absolute;
+  width: 215px;
+  background-color: #ffffff;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  z-index: 2;
+  letter-spacing: -0.4;
+  color: $color;
+  display: block;
+  bottom: 33px;
+  left: 50%;
+  transform: translateX(-109px);
+  letter-spacing: 1.6px;
+  padding-top: 16px;
+  padding-bottom: 17px;
+}
+
+.item-two {
+  position: relative;
+}
+
+.item-two:before {
+  content: "Албания";
+  position: absolute;
+  width: 215px;
+  background-color: #ffffff;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  z-index: 2;
+  letter-spacing: -0.4;
+  color: $color;
+  display: block;
+  bottom: 33px;
+  left: 50%;
+  transform: translateX(-109px);
+  letter-spacing: 1.6px;
+  padding-top: 16px;
+  padding-bottom: 17px;
+}
+
+.item-three {
+  position: relative;
+}
+
+.item-three:before {
+  content: "Македония";
+  position: absolute;
+  width: 215px;
+  background-color: #ffffff;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  z-index: 2;
+  letter-spacing: -0.4;
+  color: $color;
+  display: block;
+  bottom: 33px;
+  left: 50%;
+  transform: translateX(-109px);
+  letter-spacing: 1.6px;
+  padding-top: 16px;
+  padding-bottom: 17px;
+}
+
+.item-four {
+  position: relative;
+}
+
+.item-four:before {
+  content: "Черногория";
+  position: absolute;
+  width: 215px;
+  background-color: #ffffff;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  z-index: 2;
+  letter-spacing: -0.4;
+  color: $color;
+  display: block;
+  bottom: 33px;
+  left: 50%;
+  transform: translateX(-109px);
+  letter-spacing: 1.6px;
+  padding-top: 16px;
+  padding-bottom: 17px;
+}
+
+.item-five {
+  position: relative;
+}
+
+.item-five:before {
+  content: "Хорватия";
+  position: absolute;
+  width: 215px;
+  background-color: #ffffff;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  z-index: 2;
+  letter-spacing: -0.4;
+  color: $color;
+  display: block;
+  bottom: 33px;
+  left: 50%;
+  transform: translateX(-109px);
+  letter-spacing: 1.6px;
+  padding-top: 16px;
+  padding-bottom: 17px;
+}
+
+@media (min-width: $tablet-width) {
+  .countries {
+    margin-top: 86px;
+  }
+
+  .countries__title {
+    width: 92%;
+    margin: 0 auto;
+    padding-bottom: 27px;
+    font-size: 30px;
+    font-weight: 600;
+    color: $color;
+    letter-spacing: 2px;
+  }
+
+  .countries__text {
+    width: 44%;
+    font-size: 16px;
+    letter-spacing: 0.6px;
+    color: rgba(44, 46, 63, 0.7);
+    line-height: 28px;
+  }
+
+  .countries__list {
+    width: 83%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 18px;
+  }
+
+  .countries__img {
+    width: 91%;
+    margin: 0 auto;
+    height: 425px;
+  }
+  .countries__item {
+    width: 50%;
+    padding-bottom: 16px;
+  }
+
+  .countries__item:last-child {
+    margin: 0 auto;
+    padding-top: 11px;
+  }
+
+  .countries__item:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .item-one:before,
+  .item-two:before,
+  .item-three:before,
+  .item-four:before,
+  .item-five:before {
+    bottom: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .countries {
+    width: 100%;
+    max-width: 1173px;
+    margin: 0 auto;
+    margin-top: 504px;
+  }
+
+  .countries__container {
+    margin: 0;
+  }
+
+  .countries__title {
+    font-size: 55px;
+    line-height: 80px;
+    width: 45%;
+    margin: 0;
+    text-align: left;
+    padding-bottom: 64px;
+  }
+
+  .countries__text {
+    width: 34%;
+    text-align: left;
+    margin: 0;
+    position: relative;
+  }
+
+  .countries__text:before {
+    content: "";
+    width: 227px;
+    height: 4px;
+    background-color: $color-basic;
+    position: absolute;
+    bottom: 87px;
+  }
+
+  .countries__list {
+    width: 100%;
+    justify-content: center;
+    padding-top: 35px;
+  }
+
+  .countries__item {
+    width: 30%;
+    margin-left: 0;
+    padding-bottom: 96px;
+  }
+
+  .countries__img {
+    width: 100%;
+    height: 430px;
+  }
+
+  .countries__item:last-child {
+    margin: 0;
+    padding-top: 0px;
+    margin-left: 60px;
+  }
+
+  .countries__item:nth-child(2n) {
+    margin-right: 60px;
+  }
+
+  .countries__item:nth-child(3n) {
+    margin-right: 0;
+  }
+
+ .item-one:before,
+  .item-two:before,
+  .item-three:before,
+  .item-four:before,
+  .item-five:before {
+    bottom: 99px;
+}
+
+
+
+}
