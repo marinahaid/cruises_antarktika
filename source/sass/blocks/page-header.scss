@@ -2,7 +2,7 @@
   .page-header {
     width: 100%;
     margin: 0 auto;
-height: 643px;
+height: 649px;
     background-color: $color;
     background-image: url("../img/top-desk.jpg");
     background-repeat: no-repeat;
@@ -27,9 +27,7 @@ height: 643px;
  .page-header__wrapper {
     position: relative;
     max-width: 100%;
-    max-width: 1164px;
-    margin: 0 auto;
-    padding-top: 0;
+ padding-top: 0;
     display: block;
     padding-left: 0;
     z-index: 1;
@@ -39,13 +37,13 @@ height: 643px;
     position: absolute;
     margin-left: 0;
     z-index: 100;
-    top: 20px;
+    top: -80px;
     left: 0;
   }
 
   .page-header__logo-image {
     width: 70px;
-    height: 47px;
+    height: 39px;
     padding-left: 0;
     margin-top: 0;
   }

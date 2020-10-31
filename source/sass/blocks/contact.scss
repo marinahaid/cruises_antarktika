@@ -1,0 +1,46 @@
+@media (min-width: $desktop-width) {
+.contact {
+  width: 100%;
+  margin-top: 121px;
+}
+
+.contact__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contact__right {
+  width: 43%;
+  margin-top: 56px;
+}
+
+.contact__text {
+  width: 100%;
+  font-size: 18px;
+line-height: 27px;
+font-weight: 500;
+text-align: left;
+letter-spacing: 1.2px;
+}
+
+.contact__block {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+.contact__item {
+  display: flex;
+  flex-wrap: wrap;
+align-items: center;
+}
+
+.contact__link {
+  font-size: 16px;
+  line-height: 24px;
+  color: $color;
+  letter-spacing: 1.2px;
+}
+}

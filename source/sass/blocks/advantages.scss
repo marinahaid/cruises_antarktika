@@ -6,11 +6,6 @@ margin-top: 179px;
 padding-bottom: 120px;
 }
 
-.advantages__container {
-  max-width: 1164px;
-  margin: 0 auto;
-}
-
 .advantages__list {
   list-style: none;
   padding: 0;
@@ -47,7 +42,7 @@ letter-spacing: 0.8px;
 margin-bottom: 0;
 }
 
-.item-one:before {
+.item-left:before {
 content: "";
 position: absolute;
 width: 27px;
@@ -61,7 +56,7 @@ background-image: url("../img/icon-one.svg");
 
 }
 
-.item-two:before {
+.item-center:before {
   content: "";
   position: absolute;
   width: 38px;
@@ -74,7 +69,7 @@ background-image: url("../img/icon-one.svg");
   top: 17px;
   }
 
-  .item-three:before {
+  .item-right:before {
     content: "";
     position: absolute;
     width: 42px;
