@@ -1,127 +1,119 @@
-@media (min-width: $desktop-width) {
-  .form {
-    width: 100%;
-    margin: 0 auto;
-    height: 555px;
-    background-color: $color;
-    background-image: url("../img/form-desk.jpg");
-    background-repeat: no-repeat;
+.form {
+  width: 100%;
+  margin: 0 auto;
+  height: 555px;
+  background-color: $color;
+  background-image: url("../img/form-desk.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  left: 0;
+  display: block;
+  z-index: -1;
+  margin-top: 91px;
+  position: relative;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/form-desk2.jpg");
     background-size: cover;
-    background-position: top center;
-    left: 0;
-    display: block;
-    z-index: -1;
-    margin-top: 91px;
-    position: relative;
-
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/form-desk2.jpg");
-      background-size: cover;
-    }
   }
+}
 
-  .form__wrap {
-   width: 50%;
-position: absolute;
-    left: 69px;
-    top: 178px;
+.form__wrap {
+  width: 50%;
+  position: absolute;
+  left: 69px;
+  top: 178px;
+}
 
-  }
+.form__wrap-title {
+  font-size: 40px;
+  line-height: 60px;
+  font-weight: 700;
+  text-align: left;
+  letter-spacing: 1.6px;
+  margin-bottom: 0;
+}
 
-  .form__wrap-title {
-    font-size: 40px;
-    line-height: 60px;
-    font-weight: 700;
-    text-align: left;
-     letter-spacing: 1.6px;
-     margin-bottom: 0;
-  }
-
-  .form__wrap-text {
-    font-size: 18px;
-    line-height: 27px;
-    font-weight: 400;
-    text-align: left;
-    letter-spacing: 1.0px;
-    margin-top: 7px;
-   width: 61%;
-  }
+.form__wrap-text {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+  text-align: left;
+  letter-spacing: 1px;
+  margin-top: 7px;
+  width: 61%;
+}
 
 .form__popup {
   max-width: 403px;
-	margin: 0px auto;
-	color: #fff;
+  margin: 0px auto;
+  color: #fff;
   padding: 44px 0;
-background-color: $color;
-position: absolute;
-left: 50%;
-top: 50px;
-transform: translateX(121px);
+  background-color: $color;
+  position: absolute;
+  left: 50%;
+  top: 50px;
+  transform: translateX(121px);
 }
 
 .form * {
-	outline: none;
+  outline: none;
 }
 
 .form__body {
-	position: relative;
+  position: relative;
 }
 
 .form__title {
   width: 76%;
   margin: 0 auto;
-font-size: 18px;
+  font-size: 18px;
   line-height: 27px;
-	font-weight: 500;
+  font-weight: 500;
   margin-bottom: 26px;
   text-align: left;
   letter-spacing: 1.2px;
 }
 .form__item {
-	margin: 0px 0px 17px 0px;
+  margin: 0px 0px 17px 0px;
 }
-/*.form__label {
-	font-size: 18px;
-	display: block;
-	margin: 0px 0px 10px 0px;
-}*/
+
 .form__input {
-	height: 42px;
-	padding: 0px 20px;
-	//border-radius: 5px;
-  width: 65%;
+  height: 42px;
+  padding: 0px 20px;
+width: 65%;
   margin: 0 auto;
   font-size: 14px;
   color: $color;
-	transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 
 .form__input:focus {
-	box-shadow: 0 0 15px #7a956b;
+  box-shadow: 0 0 15px #7a956b;
 }
 .form__input._error {
-	box-shadow: 0 0 15px red;
+  box-shadow: 0 0 15px red;
 }
 
 .checkbox {
 }
 .checkbox._error .checkbox__label::before {
-	box-shadow: 0 0 15px red;
+  box-shadow: 0 0 15px red;
 }
 .checkbox__input {
-	display: none;
+  display: none;
 }
 .checkbox__input:checked + .checkbox__label::after {
-	transform: scale(1);
+  transform: scale(1);
 }
 
 .checkbox__label {
-	font-size: 10px;
-	line-height: 130%;
-	display: inline-flex;
-	align-items: center;
-	position: relative;
+  font-size: 10px;
+  line-height: 130%;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
   cursor: pointer;
   width: 76%;
   letter-spacing: 0.6px;
@@ -130,20 +122,19 @@ font-size: 18px;
 .checkbox__label::before {
   content: "";
   transition: all 0.5s ease 0s;
-	align-self: flex-start;
-	flex: 0 0 18px;
-	height: 18px;
-	background-color: $color-light;
-margin: 0px 10px 0px 0px;
+  align-self: flex-start;
+  flex: 0 0 18px;
+  height: 18px;
+  background-color: $color-light;
+  margin: 0px 10px 0px 0px;
 }
 
-
 .checkbox__label::after {
-content: "";
-width: 10px;
+  content: "";
+  width: 10px;
   height: 6px;
   transform: rotate(41deg);
- /* background-color: #fff;
+  /* background-color: #fff;
   border-right: 1px solid #68b738;
   border-bottom: 1px solid #68b738;*/
   margin: 0;
@@ -160,23 +151,73 @@ width: 10px;
 .form__button {
   width: 303px;
   margin: 0 auto;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 43px;
-font-size: 14px;
-letter-spacing: 0.2px;
-	font-weight: 600;
-	cursor: pointer;
-	transition: background-color 0.5s ease 0s;
-	position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 43px;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.5s ease 0s;
+  position: relative;
   top: 11px;
 }
 
 .form__button:hover {
-opacity: 0.3;
+  opacity: 0.3;
 }
 .form__button:active {
-opacity: 0.5;
+  opacity: 0.5;
+}
+
+@media (max-width: $desktop-width) {
+  .form {
+    width: 100%;
+    margin: 0 auto;
+    height: 805px;
+    background-color: $color;
+    background-image: url("../img/form-tablet.jpg");
+    margin-top: 70px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/form-tablet2.jpg");
+    }
+  }
+
+  .form__wrap {
+    width: 60%;
+    position: static;
+    margin: 0 auto;
+  }
+
+  .form__wrap-title {
+    font-size: 34px;
+    line-height: 51px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 88px;
+  }
+
+  .form__wrap-text {
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    width: 75%;
+ margin: 0 auto;
+     margin-top: 5px;
+    padding-bottom: 52px;
+  }
+
+
+  .form__popup {
+  max-width: 403px;
+  margin: 0 auto;
+  color: #fff;
+  padding: 44px 0;
+  transform: translateX(0px);
+  margin: 0 auto;
+  position: static;
+  padding-bottom: 61px;
 }
 }

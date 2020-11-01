@@ -1,0 +1,40 @@
+
+.icon-social {
+  width: 122px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-button-icon {
+  color: $color;
+
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+
+@media (max-width: $desktop-width) {
+  .icon-social {
+    width: 91px;
+}
+
+.button-fb {
+  width: 9px;
+  height: 16px;
+}
+
+.button-insta {
+width: 16px;
+height: 16px;
+}
+
+.button-twitter {
+  width: 16px;
+height: 13px;
+}
+}

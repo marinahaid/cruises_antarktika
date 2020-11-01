@@ -103,9 +103,9 @@
             srcset="./img/webp/ 1x, ./img/webp/ 2x">
           <source type="image/webp"
             srcset="./img/webp/ 1x, ./img/webp/ 2x">-->
-                <source media="(min-width: 1024px)" srcset="./img/astoria-desk.jpg  1x, ./img/astoria-desk2.jpg  2x">
-                <source media="(min-width: 768px)" srcset="./img/astoria-tablet.jpg  1x, ./img/astoria-tablet2.jpg  2x">
-                <img class="place__img img-one" src="./img/astoria-mobile.jpg" srcset="./img/astoria-mobile2.jpg  2x"
+                <source media="(max-width: 768px)" srcset="./img/astoria-mobile.jpg  1x, ./img/astoria-mobile2.jpg  2x">
+                <source media="(max-width: 1024px)" srcset="./img/astoria-tablet.jpg  1x, ./img/astoria-tablet2.jpg  2x">
+                <img class="place__img img-one" src="./img/astoria-desk.jpg" srcset="./img/astoria-desk2.jpg  2x"
                   alt="Астория" width="270" height="386">
               </picture>
             </div>
@@ -406,12 +406,7 @@
           </li>
         </ul>
     </section>
-
-
-
-
-
-    <section class="form">
+<section class="form">
       <div class="form__wrap">
         <h2 class="form__wrap-title">Раннее бронирование</h2>
         <p class="form__wrap-text">Забронируйте тур за 3-6 месяцев
@@ -463,7 +458,10 @@
                   <use xlink:href="./img/sprite.svg#adress"></use>
                 </svg>
               </a>
-              <p class="contact__link">г. Санкт Петербург, ул. Большая Конюшенная, 19/8</p>
+              <address class="contact__address">
+                <p class="contact__link">г. Санкт Петербург,</p>
+                <p class="contact__link">ул. Большая Конюшенная, 19/8</p>
+                </address>
             </li>
             <li class="contact__item">
               <a href="#" class="contact__link">
@@ -491,37 +489,37 @@
          <li class="page-footer__site-item"><a href="#" class="site-link">Ближайшие круизы</a></li>
          <li class="page-footer__site-item"><a href="#" class="site-link">Контакты</a></li>
        </ul>
+      </div>
 
 
-
-        <div class="page-footer__icon-social-wrapper">
+       <!-- <div class="page-footer__icon-social-wrapper">-->
           <ul class="icon-social">
              <li class="icon-social__icon-item">
               <a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span>
-                <svg class="social-button-icon button--fb">
+                <svg class="social-button-icon button-fb" width="11px" height="20px">
                   <use xlink:href="./img/sprite.svg#fb"></use>
                 </svg>
               </a>
             </li>
            <li class="icon-social__icon-item">
               <a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span>
-                <svg class="social-button-icon button--insta">
+                <svg class="social-button-icon button-insta" width="20px" height="20px" >
                   <use xlink:href="./img/sprite.svg#insta"></use>
                 </svg>
               </a>
             </li>
              <li class="icon-social__icon-item">
               <a class="social-button " href="#"><span class="visually-hidden">ВКонтакте</span>
-                <svg class="social-button-icon button--twitter">
+                <svg class="social-button-icon button-twitter" width="20px" height="16px">
                   <use xlink:href="./img/sprite.svg#twitter"></use>
                 </svg>
               </a>
             </li>
 
           </ul>
-        </div>
+       <!-- </div>-->
 
-      </div>
+
     </div>
   </footer>
  <script src="./js/vendor/svg4everybody.min.js"></script>
