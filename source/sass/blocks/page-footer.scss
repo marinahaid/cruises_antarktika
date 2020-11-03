@@ -6,12 +6,12 @@
 }
 
 .page-footer__social {
-  padding-top: 50px;
+  padding-top: 47px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 17px;
+  padding-bottom: 47px;
 }
 
 .page-footer__link-logo {
@@ -69,7 +69,7 @@ align-items: center;
 }
 
 
-@media (max-width: $desktop-width) {
+@media (max-width: $tablet-width) {
 .page-footer {
  margin-top: 97px;
 }
@@ -98,6 +98,6 @@ align-items: center;
 }
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $mobile-width) {
 
 }

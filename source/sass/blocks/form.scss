@@ -11,7 +11,6 @@
   display: block;
   z-index: -1;
   margin-top: 91px;
-  position: relative;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/form-desk2.jpg");
@@ -19,18 +18,23 @@
   }
 }
 
+.form__container {
+  display: flex;
+  justify-content: space-between;
+  width: 91%;
+  margin: 0 auto;
+  padding-top: 48px;
+}
+
 .form__wrap {
-  width: 50%;
-  position: absolute;
-  left: 69px;
-  top: 178px;
+  width: 61%;
+  padding-top: 133px;
 }
 
 .form__wrap-title {
   font-size: 40px;
   line-height: 60px;
   font-weight: 700;
-  text-align: left;
   letter-spacing: 1.6px;
   margin-bottom: 0;
 }
@@ -38,8 +42,6 @@
 .form__wrap-text {
   font-size: 18px;
   line-height: 27px;
-  font-weight: 400;
-  text-align: left;
   letter-spacing: 1px;
   margin-top: 7px;
   width: 61%;
@@ -49,12 +51,8 @@
   max-width: 403px;
   margin: 0px auto;
   color: #fff;
-  padding: 44px 0;
+  padding: 44px 0 59px 0;
   background-color: $color;
-  position: absolute;
-  left: 50%;
-  top: 50px;
-  transform: translateX(121px);
 }
 
 .form * {
@@ -71,19 +69,21 @@
   font-size: 18px;
   line-height: 27px;
   font-weight: 500;
-  margin-bottom: 26px;
-  text-align: left;
+  margin-bottom: 27px;
   letter-spacing: 1.2px;
 }
 .form__item {
-  margin: 0px 0px 17px 0px;
+  margin: 0px 0px 19px 0px;
+  text-align: center;
 }
 
+
+
 .form__input {
-  height: 42px;
+  height: 44px;
   padding: 0px 20px;
-width: 65%;
-  margin: 0 auto;
+  width: 75%;
+ // margin: 0 auto;
   font-size: 14px;
   color: $color;
   transition: all 0.5s ease 0s;
@@ -204,20 +204,19 @@ width: 65%;
     line-height: 27px;
     text-align: center;
     width: 75%;
- margin: 0 auto;
-     margin-top: 5px;
+    margin: 0 auto;
+    margin-top: 5px;
     padding-bottom: 52px;
   }
 
-
   .form__popup {
-  max-width: 403px;
-  margin: 0 auto;
-  color: #fff;
-  padding: 44px 0;
-  transform: translateX(0px);
-  margin: 0 auto;
-  position: static;
-  padding-bottom: 61px;
-}
+    max-width: 403px;
+    margin: 0 auto;
+    color: #fff;
+    padding: 44px 0;
+    transform: translateX(0px);
+    margin: 0 auto;
+    position: static;
+    padding-bottom: 61px;
+  }
 }

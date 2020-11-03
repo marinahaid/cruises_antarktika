@@ -6,7 +6,6 @@
 
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 
   <title>Cruises to Antarktika</title>
   <link href="css/style.min.css" rel="stylesheet" type="text/css">
@@ -22,8 +21,8 @@
     <div class="page-header__wrapper container">
       <a class="page-header__logo" href="/">
         <picture>
-          <source media="(min-width: 1024px)" srcset="img/icon-logo-header.svg">
-          <source media="(min-width: 768px)" srcset="img/icon-logo-header.svg">
+          <source media="(max-width: 768px)" srcset="img/icon-logo-header.svg">
+          <source media="(max-width: 1024px)" srcset="img/icon-logo-header.svg">
           <img class="page-header__logo-image" src="img/icon-logo-header.svg" width="70" height="38"
             alt="Логотип круизы в Антарктике">
         </picture>
@@ -32,24 +31,25 @@
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть
             меню</span></button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
+          <ul class="main-nav__list site-list list-reset">
             <li class="site-list__item  site-list__item--active"><a href="#" class="site-list__link">Преимущества</a>
             </li>
-            <li class="site-list__item"><a href="#prices" class="site-list__link">Направления</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="#">Направления</a></li>
             <li class="site-list__item"><a class="site-list__link" href="#">Ближайшие круизы</a></li>
             <li class="site-list__item"><a class="site-list__link" href="#">Контакты</a></li>
           </ul>
         </div>
       </nav>
     </div>
-  </header>
-  <main>
-    <section class="trip-top">
-      <div class="trip-top__container">
+      <section class="trip-top">
+        <div class="trip-top__container container">
         <h2 class="trip-top__title">Круизы в Антарктику </h2>
         <p class="trip-top__text">Волшебный мир айсбергов и пингвинов</p>
       </div>
     </section>
+  </header>
+  <main>
+
 
 
     <section class="cruises">
@@ -61,6 +61,20 @@
             край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и
             многое другое.</p>
         </div>
+        <div class="cruises__img">
+        <picture>
+           <source type="image/webp" media="(max-width: 768px)"
+      srcset="./img/webp/penguin-mobile.webp  1x, ./img/webp/penguin-mobile2.webp  2x">
+    <source type="image/webp" media="(max-width: 1024px)"
+      srcset="./img/webp/penguin-tablet.webp 1x, ./img/webp/penguin-tablet2.webp 2x">
+    <source type="image/webp"
+      srcset="./img/webp/penguin-desk.webp 1x, ./img/webp/penguin-desk2.webp 2x">
+          <source media="(max-width: 768px)" srcset="./img/penguin-mobile.jpg  1x, ./img/penguin-mobile2.jpg  2x">
+          <source media="(max-width: 1024px)" srcset="./img/penguin-tablet.jpg  1x, ./img/penguin-tablet2.jpg  2x">
+          <img class="place__img img-one" src="./img/penguin-desk.jpg" srcset="./img/penguin-desk2.jpg  2x"
+            alt="Астория" width="560" height="301">
+        </picture>
+      </div>
       </div>
     </section>
 
@@ -68,7 +82,7 @@
     <section class="advantages">
       <div class="advantages__container container">
         <h2 class="advantages__title">Преимущества</h2>
-        <ul class="advantages__list">
+        <ul class="advantages__list list-reset">
           <li class="advantages__item">
             <h3 class="advantages__item-title item-left">Небольшой круизный лайнер</h3>
             <p class="advantages__item-text">Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать
@@ -93,16 +107,16 @@
     <section class="place">
       <div class="place__container container">
         <h2 class="place__title">Ближайшие круизы</h2>
-        <ul class="place__list">
+        <ul class="place__list list-reset">
           <li class="place__item">
             <div class="place__one">
               <picture>
-                <!--  <source type="image/webp" media="(min-width: 1024px)"
-            srcset="./img/webp/  1x, ./img/webp/  2x">
-          <source type="image/webp" media="(min-width: 768px)"
-            srcset="./img/webp/ 1x, ./img/webp/ 2x">
+                 <source type="image/webp" media="(max-width: 768px)"
+            srcset="./img/webp/astoria-mobile.webp  1x, ./img/webp/astoria-mobile2.webp  2x">
+          <source type="image/webp" media="(max-width: 1024px)"
+            srcset="./img/webp/astoria-tablet.webp 1x, ./img/webp/astoria-tablet2.webp 2x">
           <source type="image/webp"
-            srcset="./img/webp/ 1x, ./img/webp/ 2x">-->
+            srcset="./img/webp/astoria-desk.webp 1x, ./img/webp/astoria-desk2.webp 2x">
                 <source media="(max-width: 768px)" srcset="./img/astoria-mobile.jpg  1x, ./img/astoria-mobile2.jpg  2x">
                 <source media="(max-width: 1024px)" srcset="./img/astoria-tablet.jpg  1x, ./img/astoria-tablet2.jpg  2x">
                 <img class="place__img img-one" src="./img/astoria-desk.jpg" srcset="./img/astoria-desk2.jpg  2x"
@@ -136,15 +150,15 @@
           <li class="place__item">
             <div class="place__one">
               <picture>
-                <!--  <source type="image/webp" media="(min-width: 1024px)"
-            srcset="./img/webp/  1x, ./img/webp/  2x">
-          <source type="image/webp" media="(min-width: 768px)"
-            srcset="./img/webp/ 1x, ./img/webp/ 2x">
-          <source type="image/webp"
-            srcset="./img/webp/ 1x, ./img/webp/ 2x">-->
-                <source media="(min-width: 1024px)" srcset="./img/astoria-desk.jpg  1x, ./img/astoria-desk2.jpg  2x">
-                <source media="(min-width: 768px)" srcset="./img/astoria-tablet.jpg  1x, ./img/astoria-tablet2.jpg  2x">
-                <img class="place__img img-two" src="img/astoria-mobile.jpg" srcset="./img/astoria-mobile2.jpg  2x"
+                <source type="image/webp" media="(max-width: 768px)"
+                srcset="./img/webp/astoria-mobile.webp  1x, ./img/webp/astoria-mobile2.webp  2x">
+              <source type="image/webp" media="(max-width: 1024px)"
+                srcset="./img/webp/astoria-tablet.webp 1x, ./img/webp/astoria-tablet2.webp 2x">
+              <source type="image/webp"
+                srcset="./img/webp/astoria-desk.webp 1x, ./img/webp/astoria-desk2.webp 2x">
+                <source media="(max-width: 768px)" srcset="./img/astoria-mobile.jpg  1x, ./img/astoria-mobile2.jpg  2x">
+                <source media="(max-width: 1024px)" srcset="./img/astoria-tablet.jpg  1x, ./img/astoria-tablet2.jpg  2x">
+                <img class="place__img img-two" src="img/astoria-desk.jpg" srcset="./img/astoria-desk2.jpg  2x"
                   alt="Элайн" width="270" height="386">
               </picture>
             </div>
@@ -175,17 +189,16 @@
           <li class="place__item">
             <div class="place__one">
               <picture>
-                <!--  <source type="image/webp" media="(min-width: 1024px)"
-            srcset="./img/webp/  1x, ./img/webp/  2x">
-          <source type="image/webp" media="(min-width: 768px)"
-            srcset="./img/webp/ 1x, ./img/webp/ 2x">
+                 <source type="image/webp" media="(max-width: 768px)"
+            srcset="./img/webp/atlantic-mobile.webp  1x, ./img/webp/atlantic-mobile2.webp  2x">
+          <source type="image/webp" media="(max-width: 1024px)"
+            srcset="./img/webp/atlantic-tablet.webp 1x, ./img/webp/atlantic-tablet2.webp 2x">
           <source type="image/webp"
-            srcset="./img/webp/ 1x, ./img/webp/ 2x">-->
-                <source media="(min-width: 1024px)" srcset="./img/atlantic-desk.jpg  1x, ./img/atlantic-desk2.jpg  2x">
-                <source media="(min-width: 768px)"
-                  srcset="./img/atlantic-tablet.jpg  1x, ./img/atlantic-tablet2.jpg  2x">
-                <img class="place__img img-three" src="./img/atlantic-mobile.jpg"
-                  srcset="./img/atlantic-mobile2.jpg  2x" alt="Атлантис" width="270" height="386">
+            srcset="./img/webp/atlantic-desk.webp 1x, ./img/webp/atlantic-desk2.webp 2x">
+                <source media="(max-width: 768px)" srcset="./img/atlantic-mobile.jpg  1x, ./img/atlantic-mobile2.jpg  2x">
+                <source media="(max-width: 1024px)" srcset="./img/atlantic-tablet.jpg  1x, ./img/atlantic-tablet2.jpg  2x">
+                <img class="place__img img-three" src="./img/atlantic-desk.jpg" srcset="./img/atlantic-desk2.jpg  2x"
+                alt="Атлантис" width="270" height="386">
               </picture>
             </div>
             <div class="place__two">
@@ -214,15 +227,15 @@
           <li class="place__item">
             <div class="place__one">
               <picture>
-                <!--  <source type="image/webp" media="(min-width: 1024px)"
-            srcset="./img/webp/  1x, ./img/webp/  2x">
-          <source type="image/webp" media="(min-width: 768px)"
-            srcset="./img/webp/ 1x, ./img/webp/ 2x">
+                 <source type="image/webp" media="(max-width: 768px)"
+            srcset="./img/webp/odissey-mobile.webp  1x, ./img/webp/odissey-mobile2.webp  2x">
+          <source type="image/webp" media="(max-width: 1024px)"
+            srcset="./img/webp/odissey-tablet.webp 1x, ./img/webp/odissey-tablet2.webp 2x">
           <source type="image/webp"
-            srcset="./img/webp/ 1x, ./img/webp/ 2x">-->
-                <source media="(min-width: 1024px)" srcset="./img/odissey-desk.jpg  1x, ./img/odissey-desk2.jpg  2x">
-                <source media="(min-width: 768px)" srcset="./img/odissey-tablet.jpg  1x, ./img/odissey-tablet2.jpg  2x">
-                <img class="place__img img-four" src="./img/odissey-mobile.jpg" srcset="./img/odissey-mobile2.jpg  2x"
+            srcset="./img/webp/odissey-desk.webp 1x, ./img/webpodissey-desk2.webp/ 2x">
+                <source media="(max-width: 768px)" srcset="./img/odissey-mobile.jpg  1x, ./img/odissey-mobile2.jpg  2x">
+                <source media="(max-width: 1024px)" srcset="./img/odissey-tablet.jpg  1x, ./img/odissey-tablet2.jpg  2x">
+                <img class="place__img img-four" src="./img/odissey-desk.jpg" srcset="./img/odissey-desk2.jpg  2x"
                   alt="Одиссей" width="270" height="386">
               </picture>
             </div>
@@ -252,15 +265,15 @@
           <li class="place__item">
             <div class="place__one">
               <picture>
-                <!--   <source type="image/webp" media="(min-width: 1024px)"
-            srcset="./img/webp/  1x, ./img/webp/  2x">
-          <source type="image/webp" media="(min-width: 768px)"
-            srcset="./img/webp/ 1x, ./img/webp/ 2x">
+                  <source type="image/webp" media="(max-width: 768px)"
+            srcset="./img/webp/olimpia-mobile.webp  1x, ./img/webp/olimpia-mobile2.webp 2x">
+          <source type="image/webp" media="(max-width: 1024px)"
+            srcset="./img/webp/olimpia-tablet.webp 1x, ./img/webp/olimpia-tablet2.webp 2x">
           <source type="image/webp"
-            srcset="./img/webp/ 1x, ./img/webp/ 2x">-->
-                <source media="(min-width: 1024px)" srcset="./img/olimpia-desk.jpg  1x, ./img/olimpia-desk2.jpg  2x">
-                <source media="(min-width: 768px)" srcset="./img/olimpia-tablet.jpg  1x, ./img/olimpia-tablet2.jpg  2x">
-                <img class="place__img img-five" src="./img/olimpia-mobile.jpg" srcset="./img/olimpia-mobile2.jpg  2x"
+            srcset="./img/webp/olimpia-desk.webp 1x, ./img/webp/olimpia-desk2.webp 2x">
+                <source media="(max-width: 768px)" srcset="./img/olimpia-mobile.jpg  1x, ./img/olimpia-mobile2.jpg  2x">
+                <source media="(max-width: 1024px)" srcset="./img/olimpia-tablet.jpg  1x, ./img/olimpia-tablet2.jpg  2x">
+                <img class="place__img img-five" src="./img/olimpia-desk.jpg" srcset="./img/olimpia-desk2.jpg  2x"
                   alt="Олимпия" width="270" height="386">
               </picture>
             </div>
@@ -291,15 +304,15 @@
           <li class="place__item">
             <div class="place__one">
               <picture>
-                <!--   <source type="image/webp" media="(min-width: 1024px)"
-            srcset="./img/webp/  1x, ./img/webp/  2x">
-          <source type="image/webp" media="(min-width: 768px)"
-            srcset="./img/webp/ 1x, ./img/webp/ 2x">
+                  <source type="image/webp" media="(max-width: 768px)"
+            srcset="./img/webp/avrora-mobile.webp  1x, ./img/webp/avrora-mobile2.webp  2x">
+          <source type="image/webp" media="(max-width: 1024px)"
+            srcset="./img/webp/avrora-tablet.webp 1x, ./img/webp/avrora-tablet2.webp 2x">
           <source type="image/webp"
-            srcset="./img/webp/ 1x, ./img/webp/ 2x">-->
-                <source media="(min-width: 1024px)" srcset="./img/avrora-desk.jpg  1x, ./img/avrora-desk2.jpg  2x">
-                <source media="(min-width: 768px)" srcset="img/avrora-tablet.jpg  1x, ./img/avrora-tablet2.jpg  2x">
-                <img class="place__img img-six" src="./img/avrora-mobile.jpg" srcset="./img/avrora-mobile2.jpg  2x"
+            srcset="./img/webp/avrora-desk.webp 1x, ./img/webp/avrora-desk2.webp 2x">
+                <source media="(max-width: 768px)" srcset="./img/avrora-mobile.jpg  1x, ./img/avrora-mobile2.jpg  2x">
+                <source media="(max-width: 1024px)" srcset="img/avrora-tablet.jpg  1x, ./img/avrora-tablet2.jpg  2x">
+                <img class="place__img img-six" src="./img/avrora-desk.jpg" srcset="./img/avrora-desk2.jpg  2x"
                   alt="Аврора" width="270" height="386">
               </picture>
             </div>
@@ -330,15 +343,15 @@
           <li class="place__item">
             <div class="place__one">
               <picture>
-                <!--   <source type="image/webp" media="(min-width: 1024px)"
-            srcset="./img/webp/  1x, ./img/webp/  2x">
-          <source type="image/webp" media="(min-width: 768px)"
-            srcset="./img/webp/ 1x, ./img/webp/ 2x">
+                  <source type="image/webp" media="(max-width: 768px)"
+            srcset="./img/webp/leonor-mobile.webp  1x, ./img/webp/leonor-mobile2.webp  2x">
+          <source type="image/webp" media="(max-width: 1024px)"
+            srcset="./img/webp/leonor-tablet.webp 1x, ./img/webp/leonor-tablet2jpg.webp 2x">
           <source type="image/webp"
-            srcset="./img/webp/ 1x, ./img/webp/ 2x">-->
-                <source media="(min-width: 1024px)" srcset="./img/leonor-desk.jpg  1x, ./img/leonor-desk2.jpg  2x">
-                <source media="(min-width: 768px)" srcset="./img/leonor-tablet.jpg  1x, ./img/leonor-tablet2.jpg  2x">
-                <img class="place__img img-seven" src="./img/leonor-mobile.jpg" srcset="./img/leonor-mobile2.jpg  2x"
+            srcset="./img/webp/leonor-desk.webp 1x, ./img/webp/leonor-desk2.webp 2x">
+                <source media="(max-width: 768px)" srcset="./img/leonor-mobile.jpg  1x, ./img/leonor-mobile2.jpg  2x">
+                <source media="(max-width: 1024px)" srcset="./img/leonor-tablet.jpg  1x, ./img/leonor-tablet2.jpg  2x">
+                <img class="place__img img-seven" src="./img/leonor-desk.jpg" srcset="./img/leonor-desk2.jpg  2x"
                   alt="Леонор" width="270" height="386">
               </picture>
             </div>
@@ -369,15 +382,15 @@
           <li class="place__item">
             <div class="place__one">
               <picture>
-                <!--  <source type="image/webp" media="(min-width: 1024px)"
-            srcset="./img/webp/  1x, ./img/webp/  2x">
-          <source type="image/webp" media="(min-width: 768px)"
-            srcset="./img/webp/ 1x, ./img/webp/ 2x">
+                  <source type="image/webp" media="(max-width: 768px)"
+            srcset="./img/webp/minion-mobile.webp  1x, ./img/webp/minion-mobile2.webp  2x">
+          <source type="image/webp" media="(max-width: 1024px)"
+            srcset="./img/webp/minion-tablet.webp 1x, ./img/webp/minion-tablet2.webp 2x">
           <source type="image/webp"
-            srcset="./img/webp/ 1x, ./img/webp/ 2x">-->
-                <source media="(min-width: 1024px)" srcset="./img/minion-desk.jpg  1x, ./img/minion-desk2.jpg  2x">
-                <source media="(min-width: 768px)" srcset="./img/minion-tablet.jpg  1x, ./img/minion-tablet2.jpg  2x">
-                <img class="place__img img-eight" src="./img/minion-mobile.jpg" srcset="./img/minion-mobile2.jpg  2x"
+            srcset="./img/webp/minion-desk.webp 1x, ./img/webp/minion-desk2.webp 2x">
+                <source media="(max-width: 768px)" srcset="./img/minion-mobile.jpg  1x, ./img/minion-mobile2.jpg  2x">
+                <source media="(max-width: 1024px)" srcset="./img/minion-tablet.jpg  1x, ./img/minion-tablet2.jpg  2x">
+                <img class="place__img img-eight" src="./img/minion-desk.jpg" srcset="./img/minion-desk2.jpg  2x"
                   alt="Минион 1" width="270" height="386">
               </picture>
             </div>
@@ -407,6 +420,7 @@
         </ul>
     </section>
 <section class="form">
+  <div class="fotm__container container">
       <div class="form__wrap">
         <h2 class="form__wrap-title">Раннее бронирование</h2>
         <p class="form__wrap-text">Забронируйте тур за 3-6 месяцев
@@ -437,6 +451,7 @@
           </div>
           <button type="submit" class="form__button button">Отправить заявку</button>
         </form>
+        </div>
       </div>
       </div>
     </section>
@@ -451,7 +466,7 @@
         <div class="contact__right">
           <p class="contact__text">У вас ещё остались вопросы или сомнения?
             Приезжайте к нам в офис и мы вам все расскажем.</p>
-          <ul class="contact__block">
+          <ul class="contact__block list-reset">
             <li class="contact__item">
               <a href="#" class="contact__link">
                 <svg class="link-icon-adress" width="25" height="22">

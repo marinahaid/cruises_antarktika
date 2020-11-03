@@ -1,18 +1,16 @@
-
 .container {
-width: 1164px;
-margin: 0 auto;
-}
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 0 103px;
 
-@media (max-width: $desktop-width) {
-  .container {
-width: 680px;
-margin: 0 auto;
+  @media (max-width: $tablet-width) {
+
+    padding: 0 45px;
+    background-color: red;
+  }
+  @media (max-width: $mobile-width) {
+
+    padding: 0 15px;
+    background-color: green;
   }
 }
-
-/*@media (max-width: $tablet-width) {
-  .container {
-    margin: 0 20px;
-  }
-}*/

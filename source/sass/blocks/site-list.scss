@@ -1,25 +1,19 @@
 
   .site-list {
-    width: 600px;
-    z-index: 3;
-    //margin-left: 568px;
-    padding-top: 42px;
+ padding-top: 42px;
   }
 
   .site-list__link {
-    display: block;
-    text-decoration: none;
-    font-size: 16px;
+   font-size: 16px;
+   line-height: 20px;
     font-weight: 500;
     color: #f9fbfd;
-    background-color: inherit;
-    letter-spacing: 1px;
+  letter-spacing: 1px;
 
     &:focus,
     &:hover {
       opacity: 0.6;
-      cursor: pointer;
-    }
+  }
 
     &:active {
       opacity: 0.3;
@@ -27,25 +21,23 @@
   }
 
   .site-list__item {
-    border-top: none;
-    border-bottom: none;
-    font-size: 20px;
-    line-height: 25px;
-    color: #ffffff;
-    display: block;
-  }
-
-  .site-list__item {
-    min-height: 40px;
-    border-top: none;
-    border-bottom: none;
-    font-size: 20px;
-    line-height: 25px;
-    color: #ffffff;
+   &:not(:last-child) {
+     margin-right: 33px;
+   }
   }
 
 
-@media (max-width: $desktop-width) {
+@media (max-width: $tablet-width) {
+  .site-list {
+    padding-top: 28px;
+}
+
+  .site-list__link {
+ font-size: 14px;
+ line-height: 18px;
+ }
+}
+ @media (max-width: $mobile-width) {
   .site-list {
     width: 503px;
     padding-top: 28px;
@@ -53,78 +45,14 @@
   }
 
   .site-list__link {
+    padding: 23px 20px 25px 20px;
     display: block;
     text-decoration: none;
-    font-size: 14px;
-    font-weight: 500;
-    color: #f9fbfd;
-    background-color: inherit;
-    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #111111;
+    border-top: 1px solid #c0baba;
 
-    &:focus,
-    &:hover {
-      opacity: 0.6;
-      cursor: pointer;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
   }
-
-  /*.site-list__link {
-    padding: 24px 0px 21px 0;
   }
-
-  .site-list__item:first-child {
-    border-top: none;
-  }*/
-}
-
-/*@media (min-width: $mobile-width) {
-
-.site-list__item {
-  position: relative;
-}
-
-.site-list__link:first-child {
-  margin-bottom: 30px;
-}
-
-.site-list__link {
-  padding: 18px 20px 18px 20px;
-  display: block;
-  text-decoration: none;
-  text-align: left;
-  font-size: 20px;
-  font-weight: 500;
-  color: #48494d;
-  background-color: #fbf8f8;
-
-  &:focus,
-  &:hover {
-    opacity: 0.6;
-    cursor: pointer;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-}
-
-.site-list__icon {
-  min-height: 12px;
-  width: 8px;
-  background-repeat: no-repeat;
-  background-position: center top;
-  position: absolute;
-  background-size: cover;
-  display: block;
-  z-index: 1;
-  top: 20px;
-  right: 32px;
-}
-
-/*.site-list__item:last-child {
-  display: none;
-}*/

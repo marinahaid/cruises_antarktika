@@ -5,19 +5,19 @@
 }
 
 .cruises__container {
-position: relative;
+display: flex;
+justify-content: space-between;
 }
 
 .cruises__left {
   width: 45%;
-  padding-top: 34px;
+  margin-top: 35px;
 }
 
 .cruises__title {
 color: $color;
 font-size: 28px;
 line-height: 42px;
-text-align: left;
 letter-spacing: 1.7px;
 }
 
@@ -30,29 +30,6 @@ text-align: left;
 letter-spacing: 1.3px;
 }
 
-
-.cruises__left:before {
-  content: "";
-  width: 560px;
-height: 301px;
-  background-color: $color;
-  background-image: url("../img/penguin-desk.jpg");
-background-color: #efefef;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top center;
- position: absolute;
- right: 0;
- top: 0;
-  display: block;
-
-
-  @media (min-resolution: $retina-dpi),
-  (min-resolution: $retina-dppx) {
-    background-image: url("../img/penguin-desk2.jpg");
-    background-size: cover;
-  }
-}
 
 
 @media (max-width: $desktop-width) {
@@ -89,30 +66,7 @@ padding-right: 103px;
   letter-spacing: 1.3px;
 
   }
+}
 
-
-  .cruises__left:before {
-    content: "";
-    width: 326px;
-  height: 264px;
-    background-color: $color;
-    background-image: url("../img/penguin-tablet.jpg");
-  background-color: #efefef;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
-   position: absolute;
-   right: 0;
-   top: 8px;
-    display: block;
-
-
-    @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
-      background-image: url("../img/penguin-tablet2.jpg");
-      background-size: cover;
-    }
-  }
-  }
 
 
