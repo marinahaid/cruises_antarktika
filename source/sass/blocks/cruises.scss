@@ -44,8 +44,7 @@ line-height: 24px;
  margin-top: 91px;
   }
 
-
-  .cruises__left {
+.cruises__left {
     width: 45%;
   margin-top: 0;
   }
@@ -68,6 +67,36 @@ margin-bottom: 10px;
 
 .cruises__image {
   height: 264px;
+}
+}
+
+
+@media (max-width: $mobile-width) {
+.cruises {
+  margin-top: 57px;
+}
+
+  .cruises__container {
+    flex-direction: column;
+}
+
+.cruises__left {
+  width: 100%;
+}
+
+.cruises__title {
+  width: 74%;
+  font-size: 24px;
+  line-height: 33.6px;
+}
+
+.cruises__img {
+  width: 100%;
+  padding-top: 42px;
+}
+
+.cruises__image {
+  height: 186px;
 }
 }
 

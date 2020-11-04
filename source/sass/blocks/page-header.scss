@@ -44,8 +44,7 @@
 
 @media (max-width: $tablet-width) {
   .page-header {
-    width: 100%;
-    height: 638px;
+height: 638px;
     background-image: url("../img/top-tablet.jpg");
     left: 0;
     display: block;
@@ -59,10 +58,6 @@
 
   .page-header__logo {
     height: 40px;
-    //margin-left: 44px;
-    //  position: absolute;
-    // top: 0;
-    // left: 0;
   }
 
   .page-header__logo-image {
@@ -74,7 +69,7 @@
 
 @media (max-width: $mobile-width) {
   .page-header {
-    width: 100%;
+    height: 500px;
   }
 
   .page-header__wrapper {
@@ -83,12 +78,12 @@
 
   .page-header__logo {
     height: 42px;
-    margin-left: 20px;
+    margin-left: 0;
   }
 
  .page-header__logo-image {
     width: 42px;
     height: 22px;
-
+    margin-top: 20px;
   }
 }

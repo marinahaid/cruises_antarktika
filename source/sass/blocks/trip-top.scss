@@ -47,6 +47,7 @@
 
 @media (max-width: $mobile-width) {
   .trip-top {
+    padding-top: 108px;
   }
 
   .trip-top__container {
@@ -60,5 +61,6 @@
   .trip-top__text {
     font-size: 16px;
     line-height: 22px;
+    width: 73%;
   }
 }

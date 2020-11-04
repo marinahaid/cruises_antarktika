@@ -76,3 +76,27 @@ margin: 0;
    padding-right: 5px;
 }
 }
+
+@media (max-width: $mobile-width) {
+.contact {
+  margin-top: 40px;
+}
+
+  .contact__container {
+flex-direction: column;
+  }
+
+  .contact__map {
+    order: 2;
+  }
+
+  .contact__right {
+    width: 100%;
+    margin-top: 0px;
+ }
+
+ .contact__map iframe {
+   width: 100%;
+   margin: 0 auto;
+ }
+}

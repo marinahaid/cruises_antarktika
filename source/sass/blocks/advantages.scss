@@ -149,21 +149,41 @@
   .advantages__item-title {
     font-size: 18px;
     line-height: 26px;
-    text-align: left;
-    position: relative;
-    padding-top: 52px;
+   padding-top: 52px;
     padding-left: 20px;
     margin-bottom: 0;
   }
 }
 
 @media (max-width: $mobile-width) {
+ .advantages {
+    margin-top: 62px;
+    padding-bottom: 38px;
+}
+
   .advantages__list {
     display: flex;
     flex-direction: column;
   }
 
+  .advantages__title {
+    font-size: 24px;
+    line-height: 36px;
+    width: 100%;
+    padding-top: 57px;
+    padding-bottom: 31px;
+  }
+
   .advantages__item {
     width: 100%;
+    margin-bottom: 30px;
   }
+
+  .advantages__item-title {
+  width: 69%;
+  }
+
+  .advantages__item-text {
+  margin-top: 7px;
+}
 }
