@@ -29,7 +29,14 @@
 
 @media (max-width: $tablet-width) {
   .site-list {
-    padding-top: 28px;
+    padding-top: 30px;
+}
+
+
+.site-list__item {
+  &:not(:last-child) {
+    margin-right: 28px;
+  }
 }
 
   .site-list__link {
@@ -41,8 +48,9 @@
   .site-list {
     width: 503px;
     padding-top: 28px;
-    margin-left: 200px;
   }
+
+
 
   .site-list__link {
     padding: 23px 20px 25px 20px;

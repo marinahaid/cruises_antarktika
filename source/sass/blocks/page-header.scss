@@ -1,6 +1,6 @@
 .page-header {
   width: 100%;
-height: 649px;
+  height: 649px;
   background-color: $color;
   background-image: url("../img/top-desk.jpg");
   background-repeat: no-repeat;
@@ -18,19 +18,18 @@ height: 649px;
 
 .page-header__wrapper {
   position: relative;
-display: flex;
-justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .page-header__logo {
-width: 70px;
-height: 38px
+  width: 70px;
+  height: 38px;
 }
 
 .page-header__logo-image {
   width: 70px;
   height: 39px;
-
   margin-top: 34px;
 
   &:hover,
@@ -58,38 +57,38 @@ height: 38px
     }
   }
 
-
-.page-header__logo {
+  .page-header__logo {
     height: 40px;
     //margin-left: 44px;
-  //  position: absolute;
-   // top: 0;
-   // left: 0;
+    //  position: absolute;
+    // top: 0;
+    // left: 0;
   }
 
   .page-header__logo-image {
     height: 20px;
     width: 38px;
+    margin-top: 30px;
   }
 }
 
 @media (max-width: $mobile-width) {
+  .page-header {
+    width: 100%;
+  }
 
-.page-header {
-  width: 100%;
-}
+  .page-header__wrapper {
+    display: block;
+  }
 
-.page-header__wrapper {
-   display: block;
-}
+  .page-header__logo {
+    height: 42px;
+    margin-left: 20px;
+  }
 
-.page-header__logo {
-  height: 42px;
-  margin-left: 20px;
-}
+ .page-header__logo-image {
+    width: 42px;
+    height: 22px;
 
-.page-header__logo-image {
- width: 42px;
- height: 22px;
-}
+  }
 }

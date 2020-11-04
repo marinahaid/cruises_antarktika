@@ -1,8 +1,10 @@
 
 .page-footer {
   width: 100%;
-  margin-top: 117px;
+  margin-top: 113px;
   background-color: $color;
+  padding-top: 49px;
+  padding-bottom: 49px;
 }
 
 .page-footer__social {
@@ -79,10 +81,7 @@ align-items: center;
   line-height: 15px;
 }
 
-.page-footer__social {
-  padding-top: 49px;
-  padding-bottom: 48px;
-}
+
 
 .page-footer__social-logo {
   width: 38px;
