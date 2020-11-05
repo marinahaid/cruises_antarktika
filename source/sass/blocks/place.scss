@@ -19,15 +19,14 @@
   font-size: 28px;
   line-height: 42px;
   font-weight: 600;
-  width: 30%;
+  max-width: 302px;
   margin: 0 auto;
-  letter-spacing: 1.6px;
-  padding-bottom: 47px;
+ padding-bottom: 47px;
 }
 
 .place__item {
   width: 23%;
-  height: 386px;
+  min-height: 386px;
   margin-bottom: 30px;
   position: relative;
   perspective: 1000px;
@@ -47,8 +46,8 @@
 
 .place__img {
   width: 100%;
-  // height: auto;
-  display: block;
+display: block;
+
 }
 
 .place__one,
@@ -63,7 +62,7 @@
 }
 
 .place__two {
-  height: 386px;
+  min-height: 386px;
   background-color: $color;
   padding: 0 24px;
   position: absolute;
@@ -96,8 +95,7 @@
   display: block;
   margin-top: 15px;
   margin-bottom: 0;
-  letter-spacing: 1px;
-}
+ }
 
 .place__two-item p {
   font-size: $font-size;
@@ -106,8 +104,7 @@
   color: $color-light;
   display: block;
   margin-top: 0;
-  letter-spacing: 1px;
-}
+ }
 
 .place__button {
   margin: 0 auto;
@@ -115,8 +112,7 @@
   font-size: $font-size;
   line-height: 21px;
   font-weight: 600;
-  letter-spacing: 0.6px;
-  padding: 10px 0;
+   padding: 10px 0;
 }
 
 @media (max-width: $tablet-width) {
@@ -127,7 +123,7 @@
   .place__title {
     font-size: 26px;
     line-height: 39px;
-    width: 45%;
+    max-width: 300px;
     padding-bottom: 50px;
   }
 
