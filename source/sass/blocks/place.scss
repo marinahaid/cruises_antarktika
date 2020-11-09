@@ -15,13 +15,13 @@
   justify-content: space-between;
 }
 
-.place__title {
+.place__container h2 {
   font-size: 28px;
   line-height: 42px;
   font-weight: 600;
   max-width: 302px;
   margin: 0 auto;
- padding-bottom: 47px;
+  padding-bottom: 47px;
 }
 
 .place__item {
@@ -46,8 +46,8 @@
 
 .place__img {
   width: 100%;
-display: block;
-position: relative;
+  display: block;
+  position: relative;
 }
 
 .place__one,
@@ -61,10 +61,10 @@ position: relative;
   min-height: 386px;
   background-color: $color;
   padding: 0 24px;
- transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
-.place__two-title {
+.place__two h3 {
   font-size: 18px;
   line-height: 27px;
   font-weight: 500;
@@ -90,7 +90,7 @@ position: relative;
   display: block;
   margin-top: 15px;
   margin-bottom: 0;
- }
+}
 
 .place__two-item p {
   font-size: $font-size;
@@ -99,7 +99,7 @@ position: relative;
   color: $color-light;
   display: block;
   margin-top: 0;
- }
+}
 
 .place__button {
   margin: 0 auto;
@@ -107,13 +107,9 @@ position: relative;
   font-size: $font-size;
   line-height: 21px;
   font-weight: 600;
-   padding: 10px 0;
+  padding: 10px 0;
 }
 
-/*.place__item-one,
-.place__item-two {
-  position: relative;
-}*/
 .place__item-one::before,
 .place__item-two::before,
 .place__item-three::before,
@@ -130,7 +126,6 @@ position: relative;
   top: 318px;
   left: 26px;
 }
-
 
 .place__item-one::before {
   content: "Круиз “Астория”";
@@ -163,7 +158,6 @@ position: relative;
 .place__item-eight::before {
   content: "Круиз “Минион - 1”";
 }
-
 
 @media (max-width: $tablet-width) {
   .place {
@@ -204,17 +198,17 @@ position: relative;
 
   .place__list {
     width: 100%;
-flex-direction: column;
-}
+    flex-direction: column;
+  }
 
-.place__item {
-  width: 93%;
-  margin: 0 auto;
-  margin-bottom: 30px;
-}
+  .place__item {
+    width: 93%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
 
-.place__item:nth-child(4n) {
-  margin: 0 auto;
-  margin-bottom: 30px;
-}
+  .place__item:nth-child(4n) {
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
 }

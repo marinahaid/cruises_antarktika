@@ -22,7 +22,7 @@
 }
 
 @media (max-width: $tablet-width) {
-.site-list li {
+  .site-list li {
     &:not(:last-child) {
       margin-right: 28px;
     }
@@ -34,7 +34,7 @@
   }
 }
 @media (max-width: $mobile-width) {
- .site-list a {
+  .site-list a {
     font-size: 18px;
     line-height: 22px;
     color: $color;
