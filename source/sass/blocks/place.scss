@@ -47,7 +47,7 @@
 .place__img {
   width: 100%;
 display: block;
-
+position: relative;
 }
 
 .place__one,
@@ -57,16 +57,11 @@ display: block;
   position: absolute;
 }
 
-.place__one {
-  position: absolute;
-}
-
 .place__two {
   min-height: 386px;
   background-color: $color;
   padding: 0 24px;
-  position: absolute;
-  transform: rotateY(180deg);
+ transform: rotateY(180deg);
 }
 
 .place__two-title {
@@ -114,6 +109,61 @@ display: block;
   font-weight: 600;
    padding: 10px 0;
 }
+
+/*.place__item-one,
+.place__item-two {
+  position: relative;
+}*/
+.place__item-one::before,
+.place__item-two::before,
+.place__item-three::before,
+.place__item-four::before,
+.place__item-five::before,
+.place__item-six::before,
+.place__item-seven::before,
+.place__item-eight::before {
+  position: absolute;
+  color: $color-light;
+  z-index: 5;
+  font-size: 18px;
+  line-height: 27px;
+  top: 318px;
+  left: 26px;
+}
+
+
+.place__item-one::before {
+  content: "Круиз “Астория”";
+}
+
+.place__item-two::before {
+  content: "Круиз “Элайн”";
+}
+
+.place__item-three::before {
+  content: "Круиз “Атлантис”";
+}
+
+.place__item-four::before {
+  content: "Круиз “Одиссей”";
+}
+
+.place__item-five::before {
+  content: "Круиз “Олимпия”";
+}
+
+.place__item-six::before {
+  content: "Круиз “Аврора”";
+}
+
+.place__item-seven::before {
+  content: "Круиз “Леонор”";
+}
+
+.place__item-eight::before {
+  content: "Круиз “Минион - 1”";
+}
+
 
 @media (max-width: $tablet-width) {
   .place {

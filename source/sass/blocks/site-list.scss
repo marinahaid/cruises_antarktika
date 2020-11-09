@@ -34,13 +34,7 @@
   }
 }
 @media (max-width: $mobile-width) {
-  .site-list li{
-background-color: #ffffff;
-  }
-
-
-
-  .site-list a {
+ .site-list a {
     font-size: 18px;
     line-height: 22px;
     color: $color;

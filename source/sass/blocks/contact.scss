@@ -5,7 +5,7 @@
 
 .contact__container {
   display: flex;
-justify-content: space-between;
+  justify-content: space-between;
 }
 
 .contact__right {
@@ -16,13 +16,13 @@ justify-content: space-between;
 .contact__right p {
   width: 100%;
   font-size: 18px;
-line-height: 27px;
-font-weight: 500;
+  line-height: 27px;
+  font-weight: 500;
 }
 
 .contact__address p {
-font-style: normal;
- font-size: 16px;
+  font-style: normal;
+  font-size: 16px;
   line-height: 24px;
   color: $color;
 }
@@ -30,7 +30,7 @@ font-style: normal;
 .contact__block li {
   display: flex;
   flex-wrap: wrap;
-align-items: baseline;
+  align-items: baseline;
 }
 
 .contact__block a {
@@ -43,7 +43,6 @@ align-items: baseline;
 .contact__map iframe {
   width: 100%;
 }
-
 
 @media (max-width: $tablet-width) {
   .contact {
@@ -71,38 +70,38 @@ align-items: baseline;
   .contact__block {
     padding-top: 9px;
   }
-.contact__address p {
-margin: 0;
-}
+  .contact__address p {
+    margin: 0;
+  }
 
   .contact__block a {
     align-self: flex-start;
-   padding-right: 5px;
-}
+    padding-right: 5px;
+  }
 }
 
 @media (max-width: $mobile-width) {
-.contact {
-
-  margin-top: 40px;
-}
+  .contact {
+    margin-top: 40px;
+  }
 
   .contact__container {
-flex-direction: column;
+    flex-direction: column;
   }
 
   .contact__map {
     width: 100%;
+    margin: 0 auto;
     order: 2;
   }
 
   .contact__right {
     width: 100%;
     margin-top: 0px;
- }
+  }
 
- .contact__map iframe {
-   width: 100%;
-   margin: 0 auto;
- }
+  .contact__map iframe {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
