@@ -119,10 +119,6 @@
   display: none;
 }
 
-.checkbox input:checked + label::after {
-  transform: scale(1);
-}
-
 .checkbox label {
   font-size: 10px;
   line-height: 130%;
@@ -143,10 +139,11 @@
   margin: 0 10px 0 0;
  }
 
-.checkbox label::after {
+.checkbox input:checked + label::after {
   content: "";
   width: 6px;
-  height: 10px;
+  height: 10px; 
+  // transform: scale(0);
   transform: rotate(40deg);
   background-color: #fff;
   border-right: 1px solid #101a56;
@@ -159,8 +156,7 @@
   position: absolute;
   left: 6px;
   top: 2px;
-  transform: scale(0);
-  }
+}
 
 
 .form__button {
