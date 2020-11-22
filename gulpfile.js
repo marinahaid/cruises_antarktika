@@ -9,7 +9,7 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var htmlmin = require("gulp-htmlmin");
 var csso = require("gulp-csso");
-var uglify = require("gulp-uglify");
+let uglify = require('gulp-uglify-es').default;
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
@@ -74,7 +74,7 @@ gulp.task("html", function () {
     return gulp
         .src("source/*.html")
         .pipe(posthtml([include()]))
-        // .pipe(htmlmin({ collapseWhitespace: true }))
+        .pipe(htmlmin({ collapseWhitespace: true }))
         .pipe(gulp.dest("build"));
 });
 

@@ -1,19 +1,7 @@
 .page-header {
   width: 100%;
-  height: 649px;
-  background-color: $color;
-  background-image: url("../img/top-desk.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top center;
-  left: 0;
-  display: block;
-  z-index: -1;
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/top-desk2.jpg");
-    background-size: cover;
-  }
+  z-index: 3;
+  position: relative;
 }
 
 .page-header__wrapper {
@@ -32,7 +20,7 @@
   margin-top: 34px;
 
   &:hover,
-  &focus {
+  &:focus {
     opacity: 0.8;
   }
 
@@ -42,19 +30,6 @@
 }
 
 @media (max-width: $tablet-width) {
-  .page-header {
-    height: 638px;
-    background-image: url("../img/top-tablet.jpg");
-    left: 0;
-    display: block;
-    z-index: -1;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/top-tablet2.jpg");
-      background-size: cover;
-    }
-  }
-
   .page-header__logo {
     height: 40px;
   }
@@ -67,19 +42,13 @@
 }
 
 @media (max-width: $mobile-width) {
-  .page-header {
-    background-image: url("../img/top-mobile.jpg");
-    height: 500px;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/top-mobile2.jpg");
-      background-size: cover;
-    }
+  .page-header__wrapper {
+    display: block;
   }
 
   .page-header__logo {
     height: 42px;
-    margin-left: 15px;
+    display: flex;
   }
 
   .page-header__logo-image {

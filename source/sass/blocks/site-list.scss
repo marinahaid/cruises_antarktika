@@ -3,7 +3,6 @@
   line-height: 20px;
   font-weight: 500;
   color: $color-light;
-  letter-spacing: 1px;
 
   &:focus,
   &:hover {
@@ -16,16 +15,13 @@
 }
 
 .site-list li {
-  &:not(:last-child) {
-    margin-right: 33px;
-  }
+  padding-top: 20px;
+  margin-left: 34px;
 }
 
 @media (max-width: $tablet-width) {
   .site-list li {
-    &:not(:last-child) {
-      margin-right: 28px;
-    }
+    margin-left: 24px;
   }
 
   .site-list a {
@@ -33,16 +29,18 @@
     line-height: 18px;
   }
 }
+
 @media (max-width: $mobile-width) {
   .site-list a {
     font-size: 18px;
     line-height: 22px;
     color: $color;
     display: block;
-    padding-top: 21px;
+    padding: 15px 0 6px 0;
   }
 
-  .site-list li:last-child {
-    padding-bottom: 60px;
+  .site-list li {
+    margin-left: 0;
+    padding-top: 0;
   }
 }

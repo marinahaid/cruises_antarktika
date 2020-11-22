@@ -3,16 +3,13 @@
   margin-top: 111px;
 }
 
-.place__container {
-  // margin: 0 15px;
-}
-
 .place__list {
-  width: 96%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  overflow-x: hidden;
 }
 
 .place__container h2 {
@@ -21,27 +18,26 @@
   font-weight: 600;
   max-width: 302px;
   margin: 0 auto;
-  padding-bottom: 47px;
+  padding-bottom: 17px;
 }
 
 .place__item {
-  width: 23%;
+  display: block;
+  width: 25%;
   min-height: 386px;
-  margin-bottom: 30px;
+  margin-top: 30px;
   position: relative;
-  perspective: 1000px;
-}
-
-.place__item:hover .place__one {
-  transform: rotateY(180deg);
+  padding: 0 15px;
 }
 
 .place__item:hover .place__two {
-  transform: rotateY(360deg);
+  display: flex;
+  flex-direction: column;
+  min-height: 386px;
 }
 
-.place__item:nth-child(4n) {
-  margin-right: 0;
+.place__item:hover .place__one {
+  display: none;
 }
 
 .place__img {
@@ -50,18 +46,23 @@
   position: relative;
 }
 
+.place__one {
+  position: relative;
+  display: block;
+}
+
 .place__one,
 .place__two {
   transition: 1s;
-  backface-visibility: hidden;
-  position: absolute;
+  max-width: 260px;
 }
 
 .place__two {
-  min-height: 386px;
+  display: none;
+  max-height: 386px;
   background-color: $color;
-  padding: 0 24px;
-  transform: rotateY(180deg);
+  padding: 35px 25px;
+  position: absolute;
 }
 
 .place__two h3 {
@@ -70,16 +71,11 @@
   font-weight: 500;
   color: $color-light;
   margin-top: 0;
-  padding-top: 29px;
   margin-bottom: 0;
 }
 
 .place__two-list {
   display: block;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  padding-bottom: 11px;
 }
 
 .place__two-item h4 {
@@ -87,7 +83,6 @@
   line-height: 19px;
   font-weight: 500;
   color: $color-light;
-  display: block;
   margin-top: 15px;
   margin-bottom: 0;
 }
@@ -96,7 +91,7 @@
   font-size: $font-size;
   line-height: 19px;
   font-weight: 400;
-  color: $color-light;
+  color: #d8d8d9;
   display: block;
   margin-top: 0;
 }
@@ -110,53 +105,14 @@
   padding: 10px 0;
 }
 
-.place__item-one::before,
-.place__item-two::before,
-.place__item-three::before,
-.place__item-four::before,
-.place__item-five::before,
-.place__item-six::before,
-.place__item-seven::before,
-.place__item-eight::before {
+.place__one p {
   position: absolute;
   color: $color-light;
   z-index: 5;
   font-size: 18px;
   line-height: 27px;
-  top: 318px;
-  left: 26px;
-}
-
-.place__item-one::before {
-  content: "Круиз “Астория”";
-}
-
-.place__item-two::before {
-  content: "Круиз “Элайн”";
-}
-
-.place__item-three::before {
-  content: "Круиз “Атлантис”";
-}
-
-.place__item-four::before {
-  content: "Круиз “Одиссей”";
-}
-
-.place__item-five::before {
-  content: "Круиз “Олимпия”";
-}
-
-.place__item-six::before {
-  content: "Круиз “Аврора”";
-}
-
-.place__item-seven::before {
-  content: "Круиз “Леонор”";
-}
-
-.place__item-eight::before {
-  content: "Круиз “Минион - 1”";
+  top: 320px;
+  left: 28px;
 }
 
 @media (max-width: $tablet-width) {
@@ -164,22 +120,30 @@
     margin-top: 89px;
   }
 
-  .place__title {
+  .place__list {
+    padding: 0;
+  }
+
+  .place__container h2 {
     font-size: 26px;
     line-height: 39px;
-    max-width: 300px;
-    padding-bottom: 50px;
+    max-width: 282px;
+    padding-bottom: 20px;
   }
 
   .place__item {
-    width: 48%;
-    height: 386px;
+    width: 309px;
+  }
+
+  .place__one p {
+    top: 314px;
+    left: 36px;
   }
 
   .place__one,
   .place__two {
-    width: 100%;
-    margin-bottom: 30px;
+    transition: 1s;
+    max-width: 309px;
   }
 }
 
@@ -188,27 +152,31 @@
     margin-top: 57px;
   }
 
-  .place__title {
+  .place__container h2 {
     font-size: 24px;
     line-height: 36px;
-    width: 90%;
+    max-width: 262px;
     margin: 0 auto;
-    padding-bottom: 31px;
+    padding-bottom: 0;
   }
 
   .place__list {
-    width: 100%;
     flex-direction: column;
   }
 
   .place__item {
-    width: 93%;
-    margin: 0 auto;
-    margin-bottom: 30px;
+    width: 270px;
+    margin: 30px auto 0;
+    padding: 0;
   }
 
-  .place__item:nth-child(4n) {
-    margin: 0 auto;
-    margin-bottom: 30px;
+  .place__one,
+  .place__two {
+    max-width: 270px;
+  }
+
+  .place__one p {
+    top: 324px;
+    left: 24px;
   }
 }

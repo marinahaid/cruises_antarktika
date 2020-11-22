@@ -1,9 +1,41 @@
 .trip-top {
   width: 100%;
-  padding-top: 210px;
+  position: relative;
+  margin: 0 auto;
+  top: -86px;
 }
 
-.trip-top__container h2 {
+.trip-top::before {
+  content: "";
+  width: 100%;
+  min-height: 653px;
+  background-color: $color;
+  background-image: url("../img/top-desk.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  left: 0;
+  display: block;
+  z-index: -1;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/top-desk2.jpg");
+    background-size: cover;
+  }
+}
+
+.trip-top__container {
+  width: 86%;
+  position: absolute;
+  bottom: 280px;
+  left: 98px;
+}
+
+.trip-top__container br {
+  display: none;
+}
+
+.trip-top__container h1 {
   max-width: 800px;
   margin: 0;
   font-size: 54px;
@@ -22,13 +54,28 @@
 
 @media (max-width: $tablet-width) {
   .trip-top {
-    padding-top: 220px;
+    top: -79px;
   }
 
-  .trip-top__container h2 {
+  .trip-top::before {
+    content: "";
+    min-height: 667px;
+    background-image: url("../img/top-tablet.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/top-tablet2.jpg");
+      background-size: cover;
+    }
+  }
+
+  .trip-top__container {
+    left: 0;
+    bottom: 267px;
+  }
+
+  .trip-top__container h1 {
     font-size: 50px;
     line-height: 60px;
-    margin-bottom: 12px;
   }
 
   .trip-top__container p {
@@ -39,20 +86,37 @@
 
 @media (max-width: $mobile-width) {
   .trip-top {
-    padding-top: 108px;
+    top: -102px;
   }
 
-  .trip-top__container h2 {
+  .trip-top::before {
+    content: "";
+    background-image: url("../img/top-mobile.jpg");
+    min-height: 500px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/top-mobile2.jpg");
+      background-size: cover;
+    }
+  }
+
+  .trip-top__container {
+    bottom: 179px;
+  }
+
+  .trip-top__container br {
+    display: block;
+  }
+
+  .trip-top__container h1 {
     font-size: 36px;
     line-height: 45px;
-    padding-left: 15px;
-    max-width: 250px;
+    max-width: 265px;
   }
 
   .trip-top__container p {
     max-width: 250px;
     font-size: 16px;
     line-height: 22px;
-    padding-left: 15px;
   }
 }

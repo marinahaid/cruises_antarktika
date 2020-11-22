@@ -1,6 +1,5 @@
-
 .icon-social {
-  width: 122px;
+  width: 120px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -19,27 +18,27 @@
 
 @media (max-width: $tablet-width) {
   .icon-social {
-    width: 90px;
-}
+    width: 87px;
+  }
 
-.button-fb {
-  width: 9px;
-  height: 16px;
-}
+  .button-fb {
+    width: 9px;
+    height: 16px;
+  }
 
-.button-insta {
-width: 16px;
-height: 16px;
-}
+  .button-insta {
+    width: 16px;
+    height: 16px;
+  }
 
-.button-twitter {
-  width: 16px;
-height: 13px;
-}
+  .button-twitter {
+    width: 16px;
+    height: 13px;
+  }
 }
 
 @media (max-width: $mobile-width) {
-.icon-social {
-padding-top: 10px;
-}
+  .icon-social {
+    padding-top: 10px;
+  }
 }

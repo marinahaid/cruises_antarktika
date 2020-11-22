@@ -1,9 +1,8 @@
-
 .page-footer {
   width: 100%;
-  margin-top: 113px;
+  margin-top: 115px;
   background-color: $color;
-  padding-top: 49px;
+  padding-top: 48px;
   padding-bottom: 49px;
 }
 
@@ -19,7 +18,7 @@
 .page-footer__link-logo {
   color: $color-light;
 
- &:hover,
+  &:hover,
   &:focus,
   &:active {
     opacity: 0.5;
@@ -27,21 +26,23 @@
 }
 
 .page-footer__site-list {
-  width: 600px;
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
- flex-wrap: wrap;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  padding-left: 40px;
+}
+
+.page-footer__site-list li {
+  padding-right: 35px;
 }
 
 .page-footer__container {
-  width: 70%;
-display: flex;
-justify-content: space-between;
-align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .icon-social {
@@ -55,7 +56,6 @@ align-items: center;
   line-height: 20px;
   color: $color-light;
 
-
   &:hover,
   &:focus,
   &:active {
@@ -65,40 +65,39 @@ align-items: center;
 
 .icon-social__icon-item {
   display: flex;
-justify-content: space-between;
+  justify-content: space-between;
 }
-
 
 @media (max-width: $tablet-width) {
-.page-footer {
- margin-top: 97px;
-}
+  .page-footer {
+    margin-top: 95px;
+  }
 
-.page-footer__site-list a {
-  font-size: 12px;
-  line-height: 15px;
-}
+  .page-footer__site-list li {
+    padding-right: 25px;
+  }
 
-.page-footer__social-logo {
-  width: 38px;
-  height: 20px;
-}
+  .page-footer__site-list a {
+    font-size: 12px;
+    line-height: 15px;
+  }
 
-.page-footer__site-list {
-  width: 443px;
-}
+  .page-footer__social-logo {
+    width: 38px;
+    height: 20px;
+  }
 
-.page-footer__container {
-  width: 74%;
-}
+  .page-footer__site-list {
+    padding-left: 24px;
+  }
 }
 
 @media (max-width: $mobile-width) {
-.page-footer {
-  margin-top: 31px;
-  padding-top: 41px;
-  padding-bottom: 92px;
-}
+  .page-footer {
+    margin-top: 62px;
+    padding-top: 39px;
+    padding-bottom: 92px;
+  }
 
   .page-footer__social,
   .page-footer__container,
@@ -109,17 +108,17 @@ justify-content: space-between;
   }
 
   .page-footer__container {
-width: 100%;
+    width: 100%;
   }
 
   .page-footer__site-list {
-  padding-top: 27px;
-  width: 100%;
+    padding-top: 27px;
+    width: 100%;
+    padding-left: 0;
   }
 
   .page-footer__site-list a {
-display: block;
-padding-bottom: 17px;
+    display: block;
+    padding-bottom: 17px;
   }
-
 }

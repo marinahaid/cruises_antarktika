@@ -1,5 +1,5 @@
 .main-nav {
-  padding-top: 43px;
+  padding-top: 26px;
   position: relative;
 }
 
@@ -18,66 +18,71 @@
 
 @media (max-width: $tablet-width) {
   .main-nav {
-    padding-top: 43px;
+    padding-top: 0;
+  }
+
+  .main-nav__list {
+    padding-top: 11px;
   }
 }
 
 @media (max-width: $mobile-width) {
-  .main-nav--opened .main-nav__list::before {
+  .main-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .main-nav__wrapper {
+    margin: 0 auto;
+  }
+
+  .main-nav--opened {
+    width: 100%;
+    position: relative;
+    display: block;
+  }
+
+  .page-header .main-nav--opened {
+    min-height: 500px;
+  }
+
+  .page-header .main-nav--opened::before {
     content: "";
     position: absolute;
     z-index: 4;
     width: 40px;
     height: 22px;
     background-image: url("../img/logo-header-dark.svg");
-    top: 15px;
-  }
-
-  .main-nav--opened .main-nav__list {
-    padding: 50px 15px 0 15px;
-  }
-
-  .main-nav--opened .main-nav__wrapper {
-    position: fixed;
-    width: 100%;
-    min-height: 298px;
-    top: 0;
+    top: -22px;
     left: 0;
-    background-color: #ffffff;
-    z-index: 5;
   }
 
   .main-nav__list {
+    padding-top: 30px;
     flex-direction: column;
-  }
-
-  .main-nav--closed .site-list li {
-    display: none;
-  }
-
-  &--active {
-    display: block;
+    flex-wrap: nowrap;
   }
 
   .main-nav__toggle {
-    position: relative;
     width: 30px;
-    height: 25px;
-    top: 0;
-    right: 0;
+    height: 30px;
+    top: -24px;
+    right: -6px;
     border: none;
     cursor: pointer;
     z-index: 2;
     display: block;
-    background-color: inherit;
-    outline: none !important;
+    background-color: transparent;
+    outline: none;
+    position: relative;
   }
 
   .main-nav--closed .main-nav__toggle::before {
     content: "";
     position: absolute;
-    top: -16px;
-    left: -15px;
+    top: 6px;
+    left: 0;
     width: 25px;
     height: 3px;
     background-color: $color-light;
@@ -87,9 +92,10 @@
   }
 
   .main-nav--opened .main-nav__toggle {
-    top: 0;
-    left: auto;
+    top: -27px;
+    right: -14px;
     z-index: 7;
+    position: absolute;
 
     &::before,
     &::after {
@@ -97,8 +103,8 @@
       position: absolute;
       width: 19px;
       height: 2px;
-      top: -16px;
-      left: 14px;
+      top: 15px;
+      left: 0;
       background-color: $color;
       z-index: 4;
     }
@@ -110,6 +116,14 @@
     &::after {
       transform: rotate(-45deg);
     }
+  }
+
+  .main-nav--closed .site-list li {
+    display: none;
+  }
+
+  .site-list__active {
+    display: block;
   }
 
   .main-nav--nojs .main-nav--toggle {

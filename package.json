@@ -1,8 +1,8 @@
 {
-  "name": "trip_antarktika",
+  "name": "cruises",
   "version": "17.0.0",
   "private": true,
-  "description": "Личный проект Круизы в Антарктику",
+  "description": "Проект круизы в Антарктику",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.5.x",
@@ -19,6 +19,7 @@
     "gulp-sourcemaps": "2.6.x",
     "gulp-svgstore": "^7.0.1",
     "gulp-uglify": "^3.0.2",
+    "gulp-uglify-es": "^2.0.0",
     "gulp-webp": "^4.0.1",
     "posthtml-include": "^1.4.3",
     "stylelint": "^13.5.0",
